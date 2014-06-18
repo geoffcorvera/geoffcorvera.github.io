@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #524656;
 }
 
 a {
@@ -15,10 +16,15 @@ a {
 }
 
 h1 {
-	margin: 100px auto;
+	margin: 0 auto;
 	width: 550px;
 	font-family: 'HelveticaNeueW01-Thin', Helvetica, Arial, sans-serif;
 	font-size: 5em;
 	font-weight: lighter;
-	color: #545E60;
+}
+
+#about-me {
+	display: block;
+	width: 35%;
+	float: left;
 }
