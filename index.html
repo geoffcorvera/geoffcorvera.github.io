@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Geoff Corvera</title>
+	<title>ARIA stuffs</title>
 	<link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+	<script type="text/javascript">
+		function appendAlert() {
+			var myAlert = document.createElement("p");
+			myAlert.setAttribute("role", "alert");
+			var alertText = document.createTextNode("You just got punked.");
+			myAlert.appendChild(alertText);
+			document.body.appendChild(alertText);	
+		}
+	</script>
 </head>
 <body>
-	<div class="nav-bar">
-		<!-- <img src="public/images/display_pic.png"> -->
-	</div>
-	<div class="container">
-		<h1>Coming Soon...</h1>
-	</div>
+	<button onClick="appendAlert();">Alert test</button>
 </body>
 </html>
