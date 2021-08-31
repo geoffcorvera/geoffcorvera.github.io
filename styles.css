@@ -1,0 +1,82 @@
+:root {
+  --blue: #293663;
+  --sand: #ab8964;
+  --text: #1e2025;
+  --hero-image: "https://instagram.fhio2-2.fna.fbcdn.net/v/t51.2885-15/e35/50308308_619006875224500_6624770166996143091_n.jpg?_nc_ht=instagram.fhio2-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=8nb6a0HGxnQAX-Rehab&edm=AP_V10EBAAAA&ccb=7-4&oh=38d5ff7082bb4948c90371b952dcb144&oe=61346945&_nc_sid=4f375e";
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  margin: 0;
+}
+
+.navbar {
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: var(--blue);
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.navbar a:visited,
+.navbar a {
+  color: black;
+}
+
+.hero-container {
+  background-image: url("https://geoffcorvera.github.io/hero-test.jpg");
+  position: relative;
+  left: 0;
+  padding: 10vmin 1rem;
+  width: 100vw;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.btn-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container > button {
+  margin: 0 1.2rem;
+}
+
+h1 {
+  color: var(--sand);
+}
+
+section {
+  padding: 5vmin 1rem;
+}
+
+main {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 3em;
+}
+
+.header h2 {
+  font-size: 1.8em;
+}
