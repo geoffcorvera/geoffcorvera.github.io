@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="test_styles.css">
+        <title>Test Page</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-item"><a href="#about">About Me</a></li>
+                <li class="nav-item"><a href="#experience">Experience</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#education">Education</a></li>
+                <li class="nav-item push"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="single-column">
+            <div class="hero-container">
+                <h1>Foo</h1>
+            </div>
+            <section class="section split" id="about">
+                <div class="section-content">
+                    <div class="panel">
+                        <h2>About</h2>
+                    </div>
+                    <div class="panel">
+                        <p>Foo bar baz short</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section split" id="experience">
+                <div class="section-content">
+                    <div class="panel"><h2>Experience</h2></div>
+                    <div class="panel"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum labore maxime assumenda mollitia animi quae deleniti dolores ad? Similique eveniet ipsam atque necessitatibus veritatis magnam obcaecati quaerat perspiciatis doloremque.</p></div>
+                </div>
+            </section>
+            <section class="section" id="projects">
+                <div class="section-content">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li>Foo</li>
+                        <li>Bar</li>
+                        <li>Baz</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="education">
+                <div class="section-content">
+                    <h2>Education</h2>
+                    <p>BS, Computer Science</p>
+                    <p>Portland State University, 2021</p>
+                </div>
+            </section>
+            <section class="section" id="contact">
+                <div class="section-content">
+                    <h2>Contact me</h2>
+                    <p>[put blurb about reaching out to me here]</p>
+                    <form
+                        action="https://formspree.io/f/mvoddkbd"
+                        method="POST"
+                    >
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">Your email</label>
+                        <input type="email" name="email" id="email">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

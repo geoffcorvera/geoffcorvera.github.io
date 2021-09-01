@@ -1,0 +1,137 @@
+:root {
+  --white-bg: #f8f9fa;
+  --gray-bg: #e9ecef;
+  --gray: #6c757d;
+  --dark-gray: #343a40;
+  --dark: #212529;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.navbar a {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-decoration: none;
+}
+
+.navbar a,
+.navbar a:visited {
+  color: var(--dark-gray);
+}
+
+h2 {
+  color: var(--dark-gray);
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.single-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 10vmin 0;
+  background-color: var(--gray);
+  color: var(--white-bg);
+}
+
+.section {
+  padding: 8vmin 0;
+  width: 100%;
+  background-color: var(--gray-bg);
+  display: flex;
+  justify-content: center;
+}
+
+.section:nth-child(even) {
+  background-color: var(--white-bg);
+}
+
+.section-content {
+  width: 80vw;
+}
+
+@media only screen and (max-width: 376px) {
+  .navbar,
+  .section,
+  .hero-container {
+    min-width: 375px;
+    max-width: 376px;
+    width: 100%;
+  }
+  .navbar li:nth-child(4) {
+    display: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 500px) {
+  .navbar li:nth-child(4) {
+    display: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .push {
+    margin-left: auto;
+  }
+
+  .split > .section-content > .panel:first-child {
+    min-width: 33%;
+    max-width: 33%;
+  }
+
+  .split > .section-content > .panel {
+    flex-grow: 1;
+  }
+
+  .section-content {
+    width: 768px;
+  }
+
+  .split .section-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--dark-gray);
+}
+
+form > label {
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+form button:last-child {
+  margin-top: 1rem;
+}
