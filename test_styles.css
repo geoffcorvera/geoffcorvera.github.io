@@ -4,6 +4,7 @@
   --gray: #6c757d;
   --dark-gray: #343a40;
   --dark: #212529;
+  --md: 679px;
 }
 
 html {
@@ -13,6 +14,12 @@ html {
 body {
   margin: 0;
   width: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--dark);
 }
 
 .navbar {
@@ -31,7 +38,7 @@ body {
 
 .navbar a,
 .navbar a:visited {
-  color: var(--dark-gray);
+  color: var(--white-bg);
 }
 
 h2 {
@@ -75,7 +82,12 @@ h2 {
   width: 80vw;
 }
 
+.push {
+  color: white;
+}
+
 @media only screen and (max-width: 376px) {
+  nav,
   .navbar,
   .section,
   .hero-container {
@@ -83,7 +95,8 @@ h2 {
     max-width: 376px;
     width: 100%;
   }
-  .navbar li:nth-child(4) {
+  .navbar li:nth-child(4),
+  .navbar li:nth-child(1) {
     display: none;
     margin: 0;
   }
@@ -96,9 +109,13 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 679px) {
   .push {
     margin-left: auto;
+  }
+
+  .section-content {
+    padding: 0 2rem;
   }
 
   .split > .section-content > .panel:first-child {
@@ -111,7 +128,7 @@ h2 {
   }
 
   .section-content {
-    width: 768px;
+    width: 679px;
   }
 
   .split .section-content {
