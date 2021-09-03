@@ -2,6 +2,7 @@
   /* --blue: #293663; */
   --blue: #080c27;
   --sand: #ab8964;
+  --light-sand: #c6ae95;
   --text: #1e2025;
   --light-grey: #3e404f;
   --sm: 480px;
@@ -164,4 +165,36 @@ a:visited {
 
 .education {
   margin-bottom: 1.8rem;
+}
+
+input,
+textarea {
+  padding: 0.4rem;
+  margin-top: 0.4rem;
+  border-radius: 4px;
+  border: solid var(--blue) 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 8px;
+  border: solid white 2px;
+  font-size: 0.85rem;
+  padding: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  background-color: var(--light-sand);
+  color: var(--blue);
+  border: solid var(--blue) 2px;
+  transition: all 0.3s;
+  font-weight: 700;
 }
