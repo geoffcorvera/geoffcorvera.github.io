@@ -131,8 +131,18 @@ a:visited {
   flex-direction: column;
 }
 
-.jobs .job:nth-child(2n) {
+.job > a {
+  color: var(--blue);
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.jobs .job {
   border-top: 1px solid lightgray;
+}
+
+.jobs .job:first-child {
+  border-top: none;
 }
 
 .responsibilities {
