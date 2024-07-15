@@ -13,7 +13,7 @@
 .section-content {
   line-height: 1.2rem;
   font-size: 0.82rem;
-  width: 80vw;
+  width: 85vw;
 }
 
 .job-data {
@@ -22,12 +22,12 @@
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 868px) {
   html {
     font-size: 16pt;
   }
   .section-content {
-    width: 668px;
+    width: 700px;
     padding: 0;
     display: flex;
   }
